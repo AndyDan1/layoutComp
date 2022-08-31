@@ -1,0 +1,82 @@
+footer {
+   background: #000;
+   padding-top: 20rem;
+   padding-bottom: 5rem;
+
+   .container {
+      max-width: 57.7rem;
+   }
+
+   .title {
+      text-align: center;
+      padding-bottom: 6rem;
+      @include fb(center, center);
+      flex-direction: column;
+
+      h2 {
+         @extend %title;
+         padding-bottom: 3rem;
+      }
+
+      p {
+         @include font(1.6, 2.56, 400);
+         color: $cw;
+         opacity: 0.5;
+         max-width: 41.1rem;
+      }
+   }
+
+   form {
+      @include fb(center, center);
+      position: relative;
+      left: 2rem;
+      padding-bottom: 4rem;
+
+      input {
+         width: 35.3rem;
+         padding: 1.3rem 0rem 1.3rem 2rem;
+         font-size: 1.5rem;
+         font-weight: 500;
+         border: none;
+         border-radius: 5rem;
+         background: #fff;
+         color: #000;
+         opacity: 0.5;
+      }
+
+      button {
+         @include font(1.6, 2.4, 700);
+         color: $cw;
+         background: $lgr;
+         padding: 1rem 3rem;
+         border: none;
+         border-radius: 5rem;
+         position: relative;
+         z-index: 2;
+         right: 5rem;
+         cursor: pointer;
+
+         &:hover {
+            font-size: 1.7rem;
+            transition: .5s;
+         }
+      }
+   }
+
+   .line {
+      @include fb(center, center);
+      grid-gap: 3rem;
+
+      .social {
+         background: $lgb;
+         border-radius: 50%;
+         @include w(5, 5);
+         @include fb(center, center);
+         cursor: pointer;
+         &:hover{
+            background: red;
+            transition: .3s;
+         }
+      }
+   }
+}

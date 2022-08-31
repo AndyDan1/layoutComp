@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    max-width: 131.5rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+$cw: #ffffff;
+$lgb: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+$lgr: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+
+%title {
+    font-size: 4.8rem;
+    line-height: 6.7rem;
+    font-weight: 700;
+    color: $cw;
+    @media (max-width: 400px) {
+        font-size: 3.4rem;
+        line-height: 5rem;
+        font-weight: 700;
+    }
+}

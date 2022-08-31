@@ -1,0 +1,37 @@
+@mixin fb($y: center, $x: false, $w: false) {
+  @if $w  {
+    flex-wrap: $w;
+  }
+  @if $x  {
+    justify-content: $x;
+  }
+  
+  display: flex;
+  align-items: $y;
+
+}
+@mixin w($w: auto, $h: none) {
+  @if $w != 100% {
+    max-width: $w + rem;
+    width: 100%;
+  }
+  @if $w == 100% {
+    width: 100%;
+  }
+
+  @if $h != none {
+    height: $h + rem;
+  }
+
+  @if $w == $h {
+    min-width: $w + rem;
+    min-height: $h + rem;
+  }
+}
+
+@mixin font( $size: 1.8, $h: 2.8, $weight: normal, $fs: normal) {
+  font-size: $size + rem;
+  line-height: $h + rem;
+  font-weight: $weight;
+  font-style: $fs;
+} 
